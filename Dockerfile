@@ -1,4 +1,4 @@
-FROM laudio/pyodbc:1.0.8
+FROM pyodbc
 
 WORKDIR /app
 
@@ -7,4 +7,4 @@ COPY . .
 
 RUN pip install -r requirements.txt
 
-CMD ["python", "main.py"]
+CMD ["python3", "-i", "main.py"]

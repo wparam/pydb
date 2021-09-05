@@ -27,7 +27,6 @@ SQL_INSERT_DATA: str = 'INSERT INTO users (id, name, city) VALUES (?, ?, ?)'
 
 RECORD_COUNT: int = 10000
 
-
 def get_data(count: int) -> List[Tuple]:
     ''' Generate user data. '''
     fake = Faker()
